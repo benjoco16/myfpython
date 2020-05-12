@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is under render_html.py-->
+    <h1>{{ myvar }}</h1>
+
+    <!-- This is under condition_html.py -->
+    {% if new_year %}
+        <h2>Yes its new year</h2>
+    {% else %}
+        <h1>No no no</h1>
+    {% endif %}
+
+
+    <!-- This is under loops_html.py -->
+    <h2>{{ mt }}</h2>
+    <ul>
+        {% for ito_tatawagin in pangalan %}
+            <li>{{ ito_tatawagin }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- This is under link_html.py -->
+    <a href="{{ url_for('index') }}">home</a>
+    <a href="{{ url_for('about') }}">about</a>
+</body>
+</html>

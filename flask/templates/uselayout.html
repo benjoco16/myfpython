@@ -1,0 +1,14 @@
+{% extends "layout.html" %} <!-- Call the layout html-->
+
+{% block heading %}
+    <h1>Hello This is Block heading</h1>
+{% endblock %}
+
+{% block body %}
+    <section>This is my body</section>
+    <a href="{{ url_for('index')}}">Back to home</a>
+{% endblock %}
+
+{% block footer %}
+    copyright
+{% endblock %}
