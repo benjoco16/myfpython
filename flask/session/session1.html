@@ -1,0 +1,24 @@
+{% extends "../template/layout.html" %} <!-- Call the layout html-->
+
+{% block heading %}
+    <h1>Session test</h1>
+{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('index')}}" method="POST"> <!-- Sending to Index Function-->
+        <input type="text" name="note" id="" placeholder="Add your Note Here">
+        <button>Add Note</button>
+    </form>
+
+
+{% endblock %}
+
+{% block footer %}
+    
+{% endblock %}

@@ -1,7 +1,7 @@
 def square(x):
     return x * x
 
-def main(): #This def main() will not excute on other python file and will only work inside this file 
+def main(): #This def main() will not excute on other python file 
     for i in range(10):
         print("{} squared is {}".format(i, square(i)))
 
